@@ -5,8 +5,8 @@ A hands-on project for trying out Linux distributions **without replacing your c
 ## Contents
 
 - [Choosing a Testing Method](#choosing-a-testing-method)
-- [1. Virtual Machines](#1-virtual-machines)
-- [2. Online (Browser-Based) Testing](#2-online-browser-based-testing)
+- [1. Online (Browser-Based) Testing](#1-online-browser-based-testing)
+- [2. Virtual Machines](#2-virtual-machines)
 - [3. Bootable USB (Live Session)](#3-bootable-usb-live-session)
 - [4. Docker Containers](#4-docker-containers)
 - [Distributions to Explore](#distributions-to-explore)
@@ -14,15 +14,14 @@ A hands-on project for trying out Linux distributions **without replacing your c
 - [Recording Results](#recording-results)
 - [Project Goals](#project-goals)
 
-
 ---
 
 ## Choosing a Testing Method
 
 | Method | Setup effort | Real hardware test | Full desktop | Kernel tested | Best for |
 |---|---|---|---|---|---|
-| Virtual machine | Medium | ❌ | ✅ | ✅ (guest) | Installing and living with a distro for a while |
 | Browser-based | None | ❌ | ✅ (limited) | ❌ | A quick first look |
+| Virtual machine | Medium | ❌ | ✅ | ✅ (guest) | Installing and living with a distro for a while |
 | Bootable USB | Low–Medium | ✅ | ✅ | ✅ | Checking Wi-Fi, GPU, audio, sleep, peripherals |
 | Docker container | Low | ❌ | ❌ (CLI only) | ❌ (shares host) | Comparing package managers and CLI tooling |
 
@@ -30,7 +29,27 @@ A hands-on project for trying out Linux distributions **without replacing your c
 
 ---
 
-## 1. Virtual Machines
+## 1. Online (Browser-Based) Testing
+
+Try a distribution's desktop directly in the browser, with nothing to install.
+
+**Platform**
+
+- [DistroSea](https://distrosea.com/)
+
+**Advantages**
+
+- Zero setup — useful for a first impression of a desktop environment.
+- Fast way to shortlist distributions before downloading anything.
+
+**Limitations**
+
+- Sessions are time-limited and can feel slow.
+- Says nothing about performance or hardware compatibility.
+
+---
+
+## 2. Virtual Machines
 
 Run a full Linux system inside your current OS.
 
@@ -53,26 +72,6 @@ Run a full Linux system inside your current OS.
 - Enable hardware virtualization (Intel VT-x / AMD-V) in your BIOS/UEFI.
 - Take a snapshot right after installation so every test starts from a clean state.
 - VM performance is not representative of bare metal — use it for relative comparisons only.
-
----
-
-## 2. Online (Browser-Based) Testing
-
-Try a distribution's desktop directly in the browser, with nothing to install.
-
-**Platform**
-
-- [DistroSea](https://distrosea.com/)
-
-**Advantages**
-
-- Zero setup — useful for a first impression of a desktop environment.
-- Fast way to shortlist distributions before downloading anything.
-
-**Limitations**
-
-- Sessions are time-limited and can feel slow.
-- Says nothing about performance or hardware compatibility.
 
 ---
 
