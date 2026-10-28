@@ -13,8 +13,7 @@ A hands-on project for trying out Linux distributions **without replacing your c
 - [Evaluation Criteria](#evaluation-criteria)
 - [Recording Results](#recording-results)
 - [Project Goals](#project-goals)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ---
 
